@@ -1,5 +1,5 @@
 context:
-  version: "0.5.2"
+  version: "0.6.0"
 
 package:
   name: "stare-atlas"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/s/stare/stare-${{ version }}.tar.gz
-  sha256: 9c7c330441bc945539155c283bfb93730a27ef4509a73e233b0a7d8da62a8f86
+  sha256: f0f6caccbd5f77b53518a3bbc10e3f3e2421b9dc15f5fe241a3f1cbced1580e3
 
 build:
   noarch: python
@@ -50,8 +50,7 @@ tests:
   - requirements:
       run:
         - python ${{ python_min }}.*
-    script:
-      stare --help
+    script: stare --help
 
 about:
   homepage: https://github.com/kratsg/stage
